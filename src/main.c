@@ -365,7 +365,8 @@ int main(int argc, char **argv)
                     state.user_scale = 1.0f;
                 } break;
 
-                case RGFW_F5: {
+                case RGFW_F5:
+		case RGFW_r: {
                     parse_state_from_args(&state, argc, argv);
                     if (state.paused) {
                         set_texture_color_mod(PAUSE_COLOR_R/255.0f, PAUSE_COLOR_G/255.0f, PAUSE_COLOR_B/255.0f);
